@@ -122,6 +122,7 @@ public class LevelGenerator : MonoBehaviour
             generatedRooms.RemoveAt((roomsToSpawn));  // remove last room form the list 
             endRoom = newRoom;  // make removed room from the list thelastroom 
             endRoom.GetComponent<Room>().lastRoom = true;   // set lastlevel bool in this room to true
+            endRoom.GetComponent<Room>().roomHider.SetActive(false);  // disable roomhider so last room can be seen on minimap from getgo
         }
     }
 
