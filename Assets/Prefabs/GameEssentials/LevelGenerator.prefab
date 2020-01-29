@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5306342488342079551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5306342488342079550}
+  m_Layer: 0
+  m_Name: GenerationPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5306342488342079550
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5306342488342079551}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5306342489823798548}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5306342489823798546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5306342489823798548}
+  - component: {fileID: 5306342489823798549}
+  m_Layer: 0
+  m_Name: LevelGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5306342489823798548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5306342489823798546}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.18827116}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5306342488342079550}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5306342489823798549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5306342489823798546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec80530941d3c54cb3bbbf91ac6f6bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomBase: {fileID: 1520294196230212601, guid: 118a756c423ee7b45bf04fc8d672fe3f,
+    type: 3}
+  prisoner: {fileID: 3716893828356639899, guid: b1dd0c89af0639f449d61e4120879f0f,
+    type: 3}
+  roomsToSpawn: 4
+  startColor: {r: 0, g: 1, b: 0.42026234, a: 1}
+  endColor: {r: 1, g: 0, b: 0, a: 1}
+  generationPoint: {fileID: 5306342488342079550}
+  selectedDirection: 0
+  xOffset: 32
+  yOffset: 16
+  whatIsRoomBase:
+    serializedVersion: 2
+    m_Bits: 65536
+  rooms:
+    oneU: {fileID: 2036137644660190068, guid: 19955ff882a4c65459a187665a117889, type: 3}
+    oneR: {fileID: 6889769204631631898, guid: be952e68a8196af4586066b1b1381f6e, type: 3}
+    oneD: {fileID: 8749660141135626161, guid: 4fa6ba80967c78645b5589ff90831425, type: 3}
+    oneL: {fileID: 5872665336926311283, guid: 556685ab0e3efe84897ecfdc25aeb064, type: 3}
+    twoUR: {fileID: 8249919215658644590, guid: 92f1fb67e3c75e546a72175eb74e4449, type: 3}
+    twoUD: {fileID: 8243956325173463240, guid: 1178e5ba8ca5d12419a4010074a7d1cd, type: 3}
+    twoUL: {fileID: 5605307264802982742, guid: 51b48b7844d15ce4d8988791ae1fec96, type: 3}
+    twoDR: {fileID: 5121601540826827437, guid: 63534011f09c2484c86b3dbc4951ba54, type: 3}
+    twoDL: {fileID: 376395759339397774, guid: 20c92f71eb157c64f9ceefb101aff47d, type: 3}
+    twoRL: {fileID: 7580206924482444141, guid: 8d0d4570032f3d845ace03f0e3e9a281, type: 3}
+    threeURD: {fileID: 5275578765282678670, guid: d53e2fc4385c30c46bff28db8fca3c7f,
+      type: 3}
+    threeURL: {fileID: 3170952217989334674, guid: fbc422949c4fcda44a0b36b7532ff413,
+      type: 3}
+    threeUDL: {fileID: 5367413371380746696, guid: a4aad1e795daf0246ab636d43970a444,
+      type: 3}
+    threeDRL: {fileID: 8873404307274711948, guid: 85a100c352043134fb9e9834d59e8502,
+      type: 3}
+    fourURDL: {fileID: 5226757098189276126, guid: b2e216402a5deee428556801e8992817,
+      type: 3}
+  endRoom: {fileID: 0}
+  hellAltar: {fileID: 7619553435245514639, guid: f1dc490188619164d99585054f67f3b8,
+    type: 3}
+  heavenAltar: {fileID: 3077047612744594730, guid: 9db2d2cc31a7b8e4980b74a6ea166ed7,
+    type: 3}
