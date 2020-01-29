@@ -62,12 +62,12 @@ public class Altar : MonoBehaviour
 
     public void ConvertTokens()
     {
-        if (CharacterTracker.instance.commonTokenNo >= 3)
+        if (CharacterTracker.instance.commonTokenNo >= 5)
         {
 
             if (hellAltar)
             {
-                CharacterTracker.instance.commonTokenNo -= 3;
+                CharacterTracker.instance.commonTokenNo -= 5;
 
                 CharacterTracker.instance.hellTokensNo++;
 
@@ -76,7 +76,7 @@ public class Altar : MonoBehaviour
 
             if (heavenAltar)
             {
-                CharacterTracker.instance.commonTokenNo -= 3;
+                CharacterTracker.instance.commonTokenNo -= 5;
 
                 CharacterTracker.instance.heavenTokensNo++;
 
@@ -104,7 +104,7 @@ public class Altar : MonoBehaviour
         if (hellAltar)
         {
 
-            if (CharacterTracker.instance.hellTokensNo > 0 || CharacterTracker.instance.commonTokenNo >= 3)   // check if player has any hell token
+            if (CharacterTracker.instance.hellTokensNo > 0 || CharacterTracker.instance.commonTokenNo >= 5)   // check if player has any hell token
             {
 
                 UIController.instance.hellAltarUI.SetActive(true);
@@ -125,7 +125,7 @@ public class Altar : MonoBehaviour
         if (heavenAltar)
         {
 
-            if (CharacterTracker.instance.heavenTokensNo > 0 || CharacterTracker.instance.commonTokenNo >= 3)  // check if player has any heaven token 
+            if (CharacterTracker.instance.heavenTokensNo > 0 || CharacterTracker.instance.commonTokenNo >= 5)  // check if player has any heaven token 
             {
 
                 UIController.instance.heavenAltarUI.SetActive(true);
